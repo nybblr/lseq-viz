@@ -1,0 +1,61 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.tree {
+  display: block;
+  /* width: 100%; */
+  /* height: 100%; */
+  font-family: 'Meslo LG S';
+  font-size: 10px;
+}
+
+.tree .link {
+  fill: none;
+  stroke: #555;
+  stroke-opacity: 0.4;
+  stroke-width: 1.5px;
+}
+
+.tree .node {
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+
+.tree .node .base {
+  r: 20px;
+}
+
+.tree .node .content {
+  alignment-baseline: middle;
+  font-size: 2em;
+  text-anchor: middle;
+}
+
+.tree .node .position {
+  transform: translateY(-3em);
+  font-size: 1em;
+  text-anchor: middle;
+  paint-order: stroke;
+  stroke: white;
+  stroke-width: 4px;
+}
+
+.tree .node.site-reserved .base {
+  fill: #956ebb;
+  r: 10px;
+}
+
+.tree .node.site-alex .base {
+  fill: #00bcd4;
+}
+
+.tree .node.site-beth .base {
+  fill: #ffc107;
+}
+
+.tree .node.site-chris .base {
+  fill: #cddc39;
+}
